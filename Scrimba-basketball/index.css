@@ -1,0 +1,91 @@
+@font-face {
+    src: url("CursedTimerUlil-Aznm.ttf");
+    font-family: Timer;
+}
+
+body {
+    margin: 0;
+    background-image: url("court.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    top: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1B244A;
+    border: 5px solid white;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home-score {
+    margin-top: 0;
+    margin-bottom: 15px;
+    background: black;
+    border-radius: 5px;
+    font-family: Timer;
+    font-size: 40px;
+    color: #F94F6D;
+    padding: 10px 60px;
+}
+
+#guest-score {
+    margin-top: 0;
+    margin-bottom: 15px;
+    background: black;
+    border-radius: 5px;
+    font-family: Timer;
+    font-size: 40px;
+    color: #F94F6D;
+    padding: 10px 60px;
+}
+
+h3 {
+    color: white;
+    text-shadow: 0 0 2px black;
+    font-size: 40px;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+button {
+    margin-left: 5px;
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    font-family: Timer;
+    background: #1B244A;
+    color: #9AABD8;
+    padding: 10px;
+    transition: all .2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+    color: white;
+    background-image: linear-gradient(90deg, black 0%, #F94F6D 50%, black 100%);
+    animation: slidebg 5s linear infinite;
+}
+
+#reset-btn {
+    margin-top: 30px;
+}
+
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
